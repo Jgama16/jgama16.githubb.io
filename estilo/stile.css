@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,300;0,500;1,200;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Pacifico&family=Poppins:ital,wght@0,300;0,500;1,200;1,500;1,700&display=swap');
+
+:root{
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+}
+
+
+.Title{
+    font-family: 'Pacifico', sans-serif;
+    font-size: 4rem;
+}
+.Portade_container{
+    width: 90%;
+    max-width: 1240px;
+    /*margin: 0 auto;*/
+    overflow: hidden;
+    margin: 10px 15px 40px;
+    
+    /*padding: var(--padding-container);*/
+    color: aliceblue;
+}
+
+
+.Portade_container::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-image: linear-gradient(180deg, #7d5f5f8c 0%,#223fb78c 100% ), url(/proyect_imgs/portada.jpg);
+    background-size:100% 100%;
+    z-index: -1;
+    
+}
+
+
+.Header{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display:contents;
+    grid-template-rows: 100px 1fr;
+}
+
+/* .Port_Container{
+    padding: 0.625rem;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 0.375rem;
+} */
+
+/* .Filter__DateFrom {
+    grid-area: date-from;
+    position: relative;
+    background: url("data:image/svg+xml,%3csvg fill-opacity='0.7' width='17' height='20' viewBox='0 0 17 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e %3cpath d='M5.81286 11.5469C5.53948 11.852 5.53948 12.3467 5.81286 12.6518C6.08625 12.9569 6.52945 12.9568 6.8028 12.6517L8.6837 10.5525C8.95915 10.2451 8.95358 9.74889 8.6837 9.44768L6.80277 7.34845C6.52942 7.04333 6.08621 7.04337 5.81283 7.34845C5.53944 7.65353 5.53944 8.14822 5.81283 8.45334L6.49876 9.21885L0.699999 9.21881C0.313425 9.21881 0 9.56858 0 10.0001C0 10.4315 0.31339 10.7813 0.699999 10.7813L6.49879 10.7814L5.81286 11.5469Z' fill='black'/%3e %3cpath d='M16.1698 0H4.75981C4.3732 0 4.05981 0.349766 4.05981 0.78125V3.75C4.05981 4.18148 4.3732 4.53125 4.75981 4.53125C5.14642 4.53125 5.45981 4.18148 5.45981 3.75V1.5625H15.4698V18.4375H5.45981V16.25C5.45981 15.8185 5.14642 15.4688 4.75981 15.4688C4.3732 15.4688 4.05981 15.8185 4.05981 16.25V19.2188C4.05981 19.6502 4.3732 20 4.75981 20H16.1698C16.5564 20 16.8698 19.6502 16.8698 19.2188V0.78125C16.8698 0.349766 16.5564 0 16.1698 0Z' fill='black'/%3e %3c/svg%3e") no-repeat;
+    border: 1px solid gray;
+    padding-left: 1.5rem !important;
+    width: 100%
+}
+
+.Port_DateTo {
+    grid-area: date-to;
+    position: relative;
+    background: url("data:image/svg+xml,%3csvg fill-opacity='0.7' width='17' height='20' viewBox='0 0 17 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e %3cpath d='M13.801 11.4266C13.5281 11.7316 13.5281 12.2262 13.801 12.5312C14.0738 12.8363 14.5161 12.8362 14.7889 12.5312L16.6659 10.4323C16.9408 10.125 16.9352 9.62882 16.6659 9.32766L14.7888 7.22879C14.516 6.92372 14.0737 6.92376 13.8009 7.22879C13.5281 7.53381 13.5281 8.02842 13.8009 8.33349L14.4854 9.09887L8.69857 9.09883C8.31278 9.09883 8 9.44854 8 9.87995C8 10.3114 8.31275 10.6611 8.69857 10.6611L14.4855 10.6611L13.801 11.4266Z' fill='black'/%3e %3cpath d='M0.69839 20H12.0817C12.4674 20 12.78 19.6502 12.78 19.2188V16.25C12.78 15.8185 12.4674 15.4688 12.0817 15.4688C11.696 15.4688 11.3833 15.8185 11.3833 16.25V18.4375H1.39675L1.39675 1.5625H11.3833V3.75C11.3833 4.18148 11.696 4.53125 12.0817 4.53125C12.4674 4.53125 12.78 4.18148 12.78 3.75V0.78125C12.78 0.349766 12.4674 0 12.0817 0H0.69839C0.312685 0 2.91998e-05 0.349766 2.91998e-05 0.78125L2.91998e-05 19.2188C2.91998e-05 19.6502 0.312685 20 0.69839 20Z' fill='black'/%3e %3c/svg%3e") no-repeat;
+    border: 1px solid gray;
+    padding-left: 1.5rem !important;
+    width: 100%
+}
+
+.Port_sizes {
+    grid-area: sizes;
+    background: url("data:image/svg+xml,%3csvg fill-opacity='0.7' width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e %3cpath d='M7 13C8.66 13 10 11.66 10 10C10 8.34 8.66 7 7 7C5.34 7 4 8.34 4 10C4 11.66 5.34 13 7 13ZM19 7H11V14H3V5H1V20H3V17H21V20H23V11C23 8.79 21.21 7 19 7Z' fill='black'/%3e %3c/svg%3e")
+}
+
+.Port_prices {
+    grid-area: prices;
+    background: url("data:image/svg+xml,%3csvg fill-opacity='0.7' width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e %3cpath d='M11.8001 10.9C9.53007 10.31 8.80007 9.7 8.80007 8.75C8.80007 7.66 9.81007 6.9 11.5001 6.9C13.2801 6.9 13.9401 7.75 14.0001 9H16.2101C16.1401 7.28 15.0901 5.7 13.0001 5.19V3H10.0001V5.16C8.06007 5.58 6.50007 6.84 6.50007 8.77C6.50007 11.08 8.41007 12.23 11.2001 12.9C13.7001 13.5 14.2001 14.38 14.2001 15.31C14.2001 16 13.7101 17.1 11.5001 17.1C9.44007 17.1 8.63007 16.18 8.52007 15H6.32007C6.44007 17.19 8.08007 18.42 10.0001 18.83V21H13.0001V18.85C14.9501 18.48 16.5001 17.35 16.5001 15.3C16.5001 12.46 14.0701 11.49 11.8001 10.9Z' fill='black'/%3e %3c/svg%3e")
+} */
+
+.Port_icon {
+    background-size: var(--filter-icon-bkgd-size-sm);
+    padding-left: 1.25rem;
+    background-repeat: no-repeat;
+    background-color: rgba(255,255,255,0.75);
+    background-position-x: 0.312rem;
+    background-position-y: center
+}
+.Port_grid{
+    /* height: 100%; */
+     display: grid ;
+    align-items: center;
+    cursor: pointer;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;  
+    /* display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: auto;
+    grid-template-areas: "countries countries" "date-from date-to" "prices sizes" ". clear";
+    gap: 0.312rem */
+}
+
+
+/* .Port_Container {
+    padding: 0.625rem;
+    width: 100%;
+    background-color: rgba(228,228,234,0.8);
+    border-radius: 0.375rem
+} */
+
+
+.SecondMenssage_Title{
+    font-family: 'Caveat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.Port_Clear{
+    display: inline-block;
+    background-color: #434e6a;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+/*/
+.Port_Container{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+.Port_Container .Port_icon{
+
+}
+
+/* main */
+
+.hotelcards.container{
+    background-color: #001A49;
+}
+.hotelcard_title{
+    font-family: 'Caveat', sans-serif;
+    font-size: 2.5em;
+    margin: 2%;
+    text-align: center;
+    /* text-align: end;
+    margin: 10%; */
+}
+
+
+.cardsHotel{
+    text-align: end;
+    
+}
+
+.hotel_container{
+    
+    margin: 0;
+    padding: 0 0 0 60px;
+    
+}
+.fichas{
+    /* padding-top: 1px; */
+    position: relative;
+    display:grid;
+    width: 90% ;
+    margin: 0;
+    gap: 1em; 
+    grid-template-columns: repeat(auto-fit, minmax(360px, auto));    
+    
+}
+
+.hotel_cards{
+    color: rgb(247, 247, 247);
+    margin: 20px;
+    /* gap: -1em; */
+    width: 100%;
+    height: 100%;
+    /* display: grid; */
+    overflow: hidden;
+    position:relative;
+    padding: 0;
+    border-radius: 30px;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.78) 76.46%);
+    /* background: radial-gradient(224.24% 668.5% at 14.41% -14.14%, rgba(97, 78, 78, 0.57) 44.5%, rgba(168, 113, 113, 0) 67.11%);  */
+    
+}
+
+
+.hotelcard_img{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: -1;
+    margin: 0;
+    
+}
+
+.hotelcard_flag{
+    width: 7%;
+    height: 7%;
+    z-index: -1;
+}
+
+
+.hotelcard_country-numbers{
+    
+    /* margin: 0;
+    text-align: end; */
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    font-family: 'Caveat', sans-serif;
+    font-size: 1.5em;
+}
+.hotel_country{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.hotel_numbers{
+    display: flex;
+    width: 100%;
+}
+.hotelcard_book{
+    display: grid;
+    background-color: #26458e;
+    color: rgb(253, 255, 255);
+    text-decoration: none;
+    /*padding: 8px -1px;*/
+    border-radius: 6px;
+    height: 25px;
+    width: 80px;
+    margin:10px;
+}
+
+/*<img src="proyect_imgs/argentina.png" alt="(flag)" class="hotelcard_flag">*/
